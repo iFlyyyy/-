@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<scroll-view scroll-x class='list'>
+  <view class='sort_list'>
+    <view class='sort' wx:for="{{sort}}">
+      <view class='item'>{{item}}</view>
+    </view>
+  </view>
+</scroll-view>
