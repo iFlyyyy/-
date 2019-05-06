@@ -1,14 +1,80 @@
 /**index.wxss**/
-.list{
-  background-color:#87ceeb;
+.types{
+  background-color:#58d0ff;
   color: white;
   font-size: 35rpx;
-  line-height: 49rpx
+  line-height: 49rpx;
+  height: 70rpx;
 }
-.sort_list{
+.types_list{
   display: flex;
 }
 .item{
-  margin-left: 30rpx;
-  width: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 80rpx;
+}
+.hot_im{
+  width: 100%;
+  position: relative;
+}
+.hot_title{
+  position: absolute;
+  bottom: 60rpx;
+  color: white;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  font-weight:bold;
+  margin-left: 15rpx;
+}
+.hot_source{
+  position: absolute;
+  bottom: 20rpx;
+  color: rgb(224, 224, 224);
+  font-size: 30rpx;
+  line-height: 42rpx;
+  margin-left: 15rpx;
+}
+.list_item{
+  height: 200rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+.list_text{
+  width: 500rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.list_image{
+  flex-grow: 1;
+  margin-right: 20rpx;
+}
+.item_image{
+  width: 220rpx;
+  height: 180rpx;
+}
+.item_source{
+  position: absolute;
+  bottom: 20rpx;
+  font-size: 25rpx;
+  line-height: 35rpx;
+  color: rgb(190, 190, 190);
+}
+.item_title{
+  position: absolute;
+  margin: auto;
+  font-size: 35rpx;
+  line-height: 49rpx;
+  margin-right: 20rpx;
+}
+.item_click{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 80rpx;
+  font-size: 40rpx;
+  line-height: 56rpx;
+  border-bottom: solid;
+  border-width: 1rpx;
 }

@@ -1,13 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/list/detail"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#87ceeb",
-    "navigationBarTitleText": "讯",
-    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#58d0ff",
+    "navigationBarTitleText": "Uda·新闻",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json"
 }

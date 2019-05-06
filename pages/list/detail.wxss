@@ -1,0 +1,43 @@
+/* pages/list/detail.wxss */
+.title_bar{
+  margin: 30rpx;
+}
+.title{
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  line-height: 56rpx;
+}
+.source{
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  line-height: 35rpx;
+  color: gainsboro;
+}
+.date{
+  position: relative;
+  left: 20rpx;
+}
+.readcount{
+  position: absolute;
+  right: 0;
+}
+.content{
+  margin: 30rpx;
+}
+.strong{
+  font-weight: bold;
+  margin-top: 30rpx;
+  margin-bottom:30rpx;
+}
+.text{
+  font-size: 33rpx;
+  line-height: 46.2rpx;
+  text-indent: 2em;
+}
+.image{
+  margin-top: 30rpx;
+  margin-bottom:30rpx;
+  width: 100%;
+}

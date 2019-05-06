@@ -1,8 +1,29 @@
 <!--index.wxml-->
-<scroll-view scroll-x class='list'>
-  <view class='sort_list'>
-    <view class='sort' wx:for="{{sort}}">
-      <view class='item'>{{item}}</view>
+<scroll-view scroll-x class='types'>
+  <view class='types_list'>
+    <view class='type' wx:for="{{types}}" wx:for-index="index" >
+      <view class='{{index==cur_index ? "item_click" : "item"}}' bindtap='classified' data-id='{{item}}' data-index='{{index}}'>{{item}}</view> 
+      <!--如果标签的index等于点击标签的index则使用item_click样式，否则使用item样式-->
     </view>
   </view>
-</scroll-view>
+</scroll-view> 
+
+<view class='content'>
+  <view class='hot'>
+    <image class='hot_im' src='{{hot_im}}' bindtap='onTap_hot' data-id='{{hot_id}}' mode='widthFix'>
+      <view class='hot_title'>{{hot_title}}</view>
+      <view class='hot_source'>{{hot_source}}  {{hot_date}}</view>
+    </image>
+  </view>
+  <view class='list'>
+    <view class='list_item' wx:for='{{list_item}}' bindtap='onTap_list' data-id='{{item.id}}'>
+      <view class='list_text'>
+        <view class='item_title'>{{item.title}}</view>
+        <view class='item_source'>{{item.source}} {{item.date}}</view>
+      </view>
+      <view class='list_image'>
+        <image class='item_image' src='{{item.firstImage}}'></image>
+      </view>
+    </view>
+  </view>
+</view>

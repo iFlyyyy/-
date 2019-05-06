@@ -1,0 +1,15 @@
+<!--pages/list/detail.wxml-->
+<view class='title_bar'>
+  <view class='title'>{{title}}</view>
+  <view class='source'>
+    <view class='from'>{{source}}</view>
+    <view class='date'>{{date}}</view>
+    <view class='readcount'>阅读量:{{readcount}}</view>
+  </view>
+</view>
+<view class='content'>
+  <view wx:for='{{container}}'>
+    <view class='{{item.type=="p" ? "text":"strong"}}'>{{item.text}}</view>
+    <image class='image' wx:if='{{item.type=="image"}}' src='{{item.src}}' mode="widthFix"></image>
+  </view>
+</view>
