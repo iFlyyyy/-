@@ -9,7 +9,7 @@ Page({
     id:"",
   },
   onPullDownRefresh(){
-    this.getnow(()=>wx.stopPullDownRefresh())
+    this.getnow(()=>{wx.stopPullDownRefresh()})
   },
   onLoad: function (options) {
     this.setData({
@@ -41,5 +41,11 @@ Page({
       readcount: result.readCount,
       container: result.content,
     })
+    if(this.data.source){}
+    else{
+      this.setData({
+        source:'网络来源'
+      })
+    }
   }
 })

@@ -34,6 +34,9 @@ Page({
         this.set_hot(result)
         this.set_list(result)
       },
+      fail:()=>{
+        console.log('数据请求失败')
+      },
       complete:()=>{
         callback && callback()    //仅在传入参数时调用关闭下拉函数
       }
@@ -53,6 +56,12 @@ Page({
         hot_im: '../images/noimage.jpg'    //hot若未接收到图片，则使用默认图片
       })
     }
+    if (this.data.hot_source){}
+    else{
+      this.setData({
+        hot_source:'网络来源'
+      })
+    }
   },
   set_list(result) {    //设置列表数据
     for (let i of result) {
@@ -60,6 +69,10 @@ Page({
       if (i.firstImage) { }
       else {
         i.firstImage = '../images/noimage.jpg'    //列表项中若未接收到图片，则使用默认图片
+      }
+      if (i.source) { }
+      else {
+          i.source = '网络来源'
       }
     }
     this.setData({
